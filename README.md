@@ -99,4 +99,4 @@ Per-run metrics are in `results/runs.csv`, confusion matrices in `results/confus
 
 ## Author
 
-Hugues Ngabonziza, Kigali, Rwanda. Code written with the assistance of an AI coding tool; the study design, runs and analysis were reviewed by the author. MIT licence.
+Hugues Ngabonziza, Kigali, Rwanda. The study design, runs and analysis were reviewed by the author. MIT licence.
