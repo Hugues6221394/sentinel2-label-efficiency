@@ -1,0 +1,81 @@
+{
+  "macro_f1_table": "| Method | 10/class | 25/class | 50/class | 100/class | 250/class |\n|---|---|---|---|---|---|\n| Random forest, RGB statistics | 0.504 \u00b1 0.027 | 0.579 \u00b1 0.012 | 0.628 \u00b1 0.006 | 0.672 \u00b1 0.011 | 0.712 \u00b1 0.004 |\n| Random forest, 13-band statistics + indices | 0.725 \u00b1 0.003 | 0.767 \u00b1 0.004 | 0.794 \u00b1 0.002 | 0.827 \u00b1 0.010 | 0.858 \u00b1 0.004 |\n| ResNet-18, RGB, from scratch | 0.614 \u00b1 0.021 | 0.701 \u00b1 0.006 | 0.742 \u00b1 0.006 | 0.800 \u00b1 0.005 | 0.830 \u00b1 0.008 |\n| ResNet-18, RGB, ImageNet-pretrained | 0.832 \u00b1 0.007 | 0.894 \u00b1 0.009 | 0.917 \u00b1 0.002 | 0.949 \u00b1 0.002 | 0.956 \u00b1 0.001 |\n| ResNet-18, 13 bands, from scratch | 0.678 \u00b1 0.031 | 0.785 \u00b1 0.005 | 0.846 \u00b1 0.005 | 0.891 \u00b1 0.004 | 0.922 \u00b1 0.003 |\n| ResNet-18, 13 bands, ImageNet-initialised | 0.809 \u00b1 0.006 | 0.888 \u00b1 0.012 | 0.913 \u00b1 0.016 | 0.948 \u00b1 0.006 | 0.954 \u00b1 0.005 |",
+  "agri_f1_table": "| Method | 10/class | 25/class | 50/class | 100/class | 250/class |\n|---|---|---|---|---|---|\n| Random forest, RGB statistics | 0.429 | 0.522 | 0.596 | 0.646 | 0.687 |\n| Random forest, 13-band statistics + indices | 0.648 | 0.709 | 0.742 | 0.786 | 0.829 |\n| ResNet-18, RGB, from scratch | 0.561 | 0.649 | 0.710 | 0.764 | 0.788 |\n| ResNet-18, RGB, ImageNet-pretrained | 0.821 | 0.871 | 0.895 | 0.933 | 0.939 |\n| ResNet-18, 13 bands, from scratch | 0.618 | 0.747 | 0.815 | 0.863 | 0.898 |\n| ResNet-18, 13 bands, ImageNet-initialised | 0.765 | 0.850 | 0.885 | 0.925 | 0.935 |",
+  "per_class_f1_at_25": {
+    "cnn_ms_imagenet": {
+      "Annual Crop": 0.906,
+      "Forest": 0.939,
+      "Herbaceous Vegetation": 0.83,
+      "Highway": 0.781,
+      "Industrial Buildings": 0.928,
+      "Pasture": 0.844,
+      "Permanent Crop": 0.821,
+      "Residential Buildings": 0.918,
+      "River": 0.926,
+      "Sea/Lake": 0.983
+    },
+    "cnn_ms_scratch": {
+      "Annual Crop": 0.781,
+      "Forest": 0.91,
+      "Herbaceous Vegetation": 0.712,
+      "Highway": 0.509,
+      "Industrial Buildings": 0.886,
+      "Pasture": 0.741,
+      "Permanent Crop": 0.753,
+      "Residential Buildings": 0.756,
+      "River": 0.83,
+      "Sea/Lake": 0.97
+    },
+    "cnn_rgb_imagenet": {
+      "Annual Crop": 0.901,
+      "Forest": 0.943,
+      "Herbaceous Vegetation": 0.857,
+      "Highway": 0.838,
+      "Industrial Buildings": 0.923,
+      "Pasture": 0.88,
+      "Permanent Crop": 0.846,
+      "Residential Buildings": 0.946,
+      "River": 0.842,
+      "Sea/Lake": 0.967
+    },
+    "cnn_rgb_scratch": {
+      "Annual Crop": 0.779,
+      "Forest": 0.85,
+      "Herbaceous Vegetation": 0.559,
+      "Highway": 0.466,
+      "Industrial Buildings": 0.858,
+      "Pasture": 0.66,
+      "Permanent Crop": 0.6,
+      "Residential Buildings": 0.81,
+      "River": 0.579,
+      "Sea/Lake": 0.846
+    },
+    "rf_ms": {
+      "Annual Crop": 0.702,
+      "Forest": 0.94,
+      "Herbaceous Vegetation": 0.72,
+      "Highway": 0.527,
+      "Industrial Buildings": 0.843,
+      "Pasture": 0.748,
+      "Permanent Crop": 0.666,
+      "Residential Buildings": 0.681,
+      "River": 0.866,
+      "Sea/Lake": 0.973
+    },
+    "rf_rgb": {
+      "Annual Crop": 0.571,
+      "Forest": 0.847,
+      "Herbaceous Vegetation": 0.45,
+      "Highway": 0.322,
+      "Industrial Buildings": 0.791,
+      "Pasture": 0.618,
+      "Permanent Crop": 0.451,
+      "Residential Buildings": 0.487,
+      "River": 0.418,
+      "Sea/Lake": 0.831
+    }
+  },
+  "full_n_per_class": null,
+  "seeds": 3,
+  "test_images": null
+}
